@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/gray"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/codigo_de_barras"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/btn_scan"
+        android:layout_marginBottom="128dp" />
+
+
+
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scanear Codigo"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tv_barcode_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confira seu Codigo"
+        android:layout_below="@id/btn_scan"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar Dados"
+        android:layout_below="@id/tv_barcode_result"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"/>
+</RelativeLayout>
